@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <physics type="ode">
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.9</erp>
+          <contact_max_correcting_vel>0.1</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>-1</real_time_update_rate>
+      <!-- <max_step_size>0.0020</max_step_size> -->
+    </physics>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="iris">
+      <include>
+        <uri>model://iris_with_standoffs_demo</uri>
+      </include>
+
+      <!-- add new camera -->
+
+      <!-- attach camera -->
+      <!-- <joint type="revolute" name="base_camera_joint">
+      <pose>0 0 0.0 0 0 0</pose>
+      <parent>iris::iris_demo::gimbal_small_2d::tilt_link</parent>
+      <child>camera</child>
+      <axis>
+      <limit>
+      <lower>0</lower>
+      <upper>0</upper>
+    </limit>
+    <xyz>0 0 1</xyz>
+    <use_parent_model_frame>true</use_parent_model_frame>
+  </axis>
+</joint> -->
+
+</model>
+
+<model name="d435">
+  <include>
+    <uri>model://realsense_d435</uri>
+  </include>
+  <link name=d435_link>
+  </link>
+
+  <joint name="d435_joint" type="fixed">
+          <pose>0 0 0 0 0 0</pose>
+          <parent>d435::realsense_d435::link1</parent>
+          <child>d435_link</child>
+  </joint>
+
+</model>
+
+
+
+</world>
+</sdf>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+
+  <!-- Gazebo sim world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find final_drone)/worlds/final_drone.world"/> 
+    <!-- more default parameters can be changed here -->
+  </include> 
+
+    <!-- vehicle model and world -->
+    <arg name="est" default="ekf2"/>
+    <arg name="vehicle" default="iris"/>
+    <arg name="world" default="$(find final_drone)/worlds/final_drone.world"/>
+    <arg name="urdf" default="$(find final_drone)/models/final_drone/final_drone.urdf"/>
+    <env name="PX4_SIM_MODEL" value="$(arg vehicle)" />
+    <env name="PX4_ESTIMATOR" value="$(arg est)" />
+  <!-- PX4 configs -->
+    <arg name="interactive" default="true"/>
+    <!-- PX4 SITL -->
+    <arg unless="$(arg interactive)" name="px4_command_arg1" value="-d"/>
+    <arg     if="$(arg interactive)" name="px4_command_arg1" value=""/>
+    <node name="sitl" pkg="px4" type="px4" output="screen"
+        args="$(find px4)/ROMFS/px4fmu_common -s etc/init.d-posix/rcS $(arg px4_command_arg1)" required="true"/>
+</launch>

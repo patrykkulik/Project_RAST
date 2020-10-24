@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name='realsense_d435i'>
+    <include>
+      <uri>model://iris</uri>
+    </include>
+
+    <include>
+      <uri>model://realsense_d435i</uri>
+      <pose>0.1 -0.2 0.02 0 0 0</pose>
+    </include>
+    
+    <joint name="realsense_d435i_joint" type="fixed">
+      <child>realsense_d435i::link1</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+  </model>
+</sdf>

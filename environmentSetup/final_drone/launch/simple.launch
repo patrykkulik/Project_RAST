@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+  <launch>
+
+    <param name="robot_description" command="cat '$(find final_drone)/models/final_drone/final_drone.urdf'" />
+
+    <node name="drone_spawn" pkg="gazebo_ros" type="spawn_model" args="-param /robot_description -urdf -model final_drone" />
+  </launch>

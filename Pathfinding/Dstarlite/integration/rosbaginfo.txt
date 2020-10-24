@@ -1,0 +1,196 @@
+gsheir@gsheir-virtual-machine:~/catkin_ws/src/drone_static$ rosbag info 2020-06-13-00-18-21.bag
+path:        2020-06-13-00-18-21.bag
+version:     2.0
+duration:    9.3s
+start:       Jan 01 1970 01:05:22.41 (322.41)
+end:         Jan 01 1970 01:05:31.68 (331.68)
+size:        627.1 MB
+messages:    17603
+compression: none [270/270 chunks]
+types:       diagnostic_msgs/DiagnosticArray       [60810da900de1dd6ddd437c3503511da]
+             dynamic_reconfigure/Config            [958f16a05573709014982821e6822580]
+             dynamic_reconfigure/ConfigDescription [757ce9d44ba8ddd801bb30bc456f946f]
+             gazebo_msgs/LinkStates                [48c080191eb15c41858319b4d8a609c2]
+             gazebo_msgs/ModelStates               [48c080191eb15c41858319b4d8a609c2]
+             geometry_msgs/PoseStamped             [d3812c3cbc69362b77dc0b19b345f8f5]
+             geometry_msgs/TwistStamped            [98d34b0043a2093cf9d9345ab6eef12e]
+             mavros_msgs/ActuatorControl           [9eea0a80c88944fe2fb67f3b3768854b]
+             mavros_msgs/Altitude                  [1296a05dc5b6160be0ae04ba9ed3a3fa]
+             mavros_msgs/AttitudeTarget            [456f3af666b22ccd0222ea053a86b548]
+             mavros_msgs/EstimatorStatus           [39dbcc4be3f04b68422f784827c47dd5]
+             mavros_msgs/ExtendedState             [ae780b1800fe17b917369d21b90058bd]
+             mavros_msgs/Mavlink                   [41093e1fd0f3eea1da2aa33a177e5ba6]
+             mavros_msgs/RCOut                     [52cacf104bab5ae3b103cfe176590713]
+             mavros_msgs/State                     [ce783f756cab1193cb71ba9e90fece50]
+             mavros_msgs/TimesyncStatus            [021ec8044e747bea518b441f374ba64b]
+             mavros_msgs/VFR_HUD                   [1f55e210c3d39fe105d44d8dc963655f]
+             mavros_msgs/WaypointList              [2cacdc0c2c212eb99fdee9f12d2e1fa4]
+             nav_msgs/OccupancyGrid                [3381f2d731d4076ec5c71b0759edbe4e]
+             nav_msgs/Odometry                     [cd5e73d190d741a2f92e81eda573aca7]
+             nav_msgs/Path                         [6227e2b7e9cce15051f669a5e197bbf7]
+             octomap_msgs/Octomap                  [9a45536b45c5e409cd49f04bb2d9999f]
+             rosgraph_msgs/Clock                   [a9c97c1d230cfc112e270351a944ee47]
+             rosgraph_msgs/Log                     [acffd30cd6b6de30f120938c17c593fb]
+             rtabmap_ros/Info                      [dd8620be5f7bd87dac1670b11dc3540d]
+             rtabmap_ros/MapData                   [f36b87edafed09efe6ce296428b3f410]
+             rtabmap_ros/MapGraph                  [903c2e44ed7e275e08ef323188cb38ee]
+             rtabmap_ros/OdomInfo                  [66979b4899394b2f3358952241c550e5]
+             sensor_msgs/BatteryState              [476f837fa6771f6e16e3bf4ef96f8770]
+             sensor_msgs/CameraInfo                [c9a58c1b0b154e0e6da7578cb991d214]
+             sensor_msgs/CompressedImage           [8f7a12909da2c9d3332d540a0977563f]
+             sensor_msgs/FluidPressure             [804dc5cea1c5306d6a2eb80b9833befe]
+             sensor_msgs/Image                     [060021388200f6f0f447d0fcd9c64743]
+             sensor_msgs/Imu                       [6a62c6daae103f4ff57a132d6f95cec2]
+             sensor_msgs/MagneticField             [2f3b0b43eed0c9501de0fa3ff89a45aa]
+             sensor_msgs/NavSatFix                 [2d3a8cd499b9b4a0249fb98fd05cfa48]
+             sensor_msgs/PointCloud2               [1158d486dd51d683ce2f1be655c3c181]
+             sensor_msgs/Temperature               [ff71b307acdbe7c871a5a6d7ed359100]
+             sensor_msgs/TimeReference             [fded64a0265108ba86c3d38fb11c0c16]
+             std_msgs/UInt32                       [304a39449588c7f8ce2df6e8001c5fce]
+             stereo_msgs/DisparityImage            [04a177815f75271039fa21f16acad8c9]
+             tf2_msgs/TFMessage                    [94810edda583a504dfda3829e70d7eec]
+             visualization_msgs/MarkerArray        [d155b9ce5188fbaf89745847fd5882d7]
+topics:      /clock                                                                                2319 msgs    : rosgraph_msgs/Clock
+             /diagnostics                                                                             9 msgs    : diagnostic_msgs/DiagnosticArray
+             /gazebo/link_states                                                                   2291 msgs    : gazebo_msgs/LinkStates
+             /gazebo/model_states                                                                  2386 msgs    : gazebo_msgs/ModelStates
+             /gazebo/parameter_descriptions                                                           1 msg     : dynamic_reconfigure/ConfigDescription
+             /gazebo/parameter_updates                                                                1 msg     : dynamic_reconfigure/Config
+             /ground_truth/state                                                                    467 msgs    : nav_msgs/Odometry
+             /iris_0/mavlink/from                                                                  3295 msgs    : mavros_msgs/Mavlink
+             /iris_0/mavros/altitude                                                                 94 msgs    : mavros_msgs/Altitude
+             /iris_0/mavros/battery                                                                   5 msgs    : sensor_msgs/BatteryState
+             /iris_0/mavros/estimator_status                                                          9 msgs    : mavros_msgs/EstimatorStatus
+             /iris_0/mavros/extended_state                                                           48 msgs    : mavros_msgs/ExtendedState
+             /iris_0/mavros/global_position/raw/fix                                                  47 msgs    : sensor_msgs/NavSatFix
+             /iris_0/mavros/global_position/raw/gps_vel                                              47 msgs    : geometry_msgs/TwistStamped
+             /iris_0/mavros/global_position/raw/satellites                                           47 msgs    : std_msgs/UInt32
+             /iris_0/mavros/imu/data                                                                458 msgs    : sensor_msgs/Imu
+             /iris_0/mavros/imu/data_raw                                                            463 msgs    : sensor_msgs/Imu
+             /iris_0/mavros/imu/diff_pressure                                                       395 msgs    : sensor_msgs/FluidPressure
+             /iris_0/mavros/imu/mag                                                                 463 msgs    : sensor_msgs/MagneticField
+             /iris_0/mavros/imu/static_pressure                                                     397 msgs    : sensor_msgs/FluidPressure
+             /iris_0/mavros/imu/temperature_imu                                                     387 msgs    : sensor_msgs/Temperature
+             /iris_0/mavros/local_position/odom                                                     281 msgs    : nav_msgs/Odometry
+             /iris_0/mavros/local_position/pose                                                     278 msgs    : geometry_msgs/PoseStamped
+             /iris_0/mavros/local_position/velocity_body                                            278 msgs    : geometry_msgs/TwistStamped
+             /iris_0/mavros/local_position/velocity_local                                           286 msgs    : geometry_msgs/TwistStamped
+             /iris_0/mavros/mission/waypoints                                                         1 msg     : mavros_msgs/WaypointList
+             /iris_0/mavros/odometry/in                                                             289 msgs    : nav_msgs/Odometry
+             /iris_0/mavros/rc/out                                                                   94 msgs    : mavros_msgs/RCOut
+             /iris_0/mavros/setpoint_raw/target_attitude                                             93 msgs    : mavros_msgs/AttitudeTarget
+             /iris_0/mavros/state                                                                    11 msgs    : mavros_msgs/State
+             /iris_0/mavros/target_actuator_control                                                  96 msgs    : mavros_msgs/ActuatorControl
+             /iris_0/mavros/time_reference                                                           10 msgs    : sensor_msgs/TimeReference
+             /iris_0/mavros/timesync_status                                                          94 msgs    : mavros_msgs/TimesyncStatus
+             /iris_0/mavros/vfr_hud                                                                  93 msgs    : mavros_msgs/VFR_HUD
+             /iris_0/stereo_camera/disparity                                                         30 msgs    : stereo_msgs/DisparityImage
+             /iris_0/stereo_camera/left/camera_info                                                  29 msgs    : sensor_msgs/CameraInfo
+             /iris_0/stereo_camera/left/image_color                                                  30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/left/image_color/compressed                                       30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/left/image_color/compressed/parameter_descriptions                 1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_color/compressed/parameter_updates                      1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_color/compressedDepth/parameter_descriptions            1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_color/compressedDepth/parameter_updates                 1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_mono                                                   29 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/left/image_mono/compressed                                        30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/left/image_mono/compressed/parameter_descriptions                  1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_mono/compressed/parameter_updates                       1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_mono/compressedDepth/parameter_descriptions             1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_mono/compressedDepth/parameter_updates                  1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_raw                                                    30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/left/image_raw/compressed                                         31 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/left/image_raw/compressed/parameter_descriptions                   1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_raw/compressed/parameter_updates                        1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_raw/compressedDepth/parameter_descriptions              1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_raw/compressedDepth/parameter_updates                   1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_rect                                                   29 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/left/image_rect/compressed                                        30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/left/image_rect/compressed/parameter_descriptions                  1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_rect/compressed/parameter_updates                       1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_rect/compressedDepth/parameter_descriptions             1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_rect/compressedDepth/parameter_updates                  1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_rect_color                                             30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/left/image_rect_color/compressed                                  30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/left/image_rect_color/compressed/parameter_descriptions            1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_rect_color/compressed/parameter_updates                 1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/image_rect_color/compressedDepth/parameter_descriptions       1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/image_rect_color/compressedDepth/parameter_updates            1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/left/parameter_descriptions                                        1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/left/parameter_updates                                             1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/odom                                                              31 msgs    : nav_msgs/Odometry
+             /iris_0/stereo_camera/odom_info                                                         30 msgs    : rtabmap_ros/OdomInfo
+             /iris_0/stereo_camera/odom_local_map                                                    31 msgs    : sensor_msgs/PointCloud2
+             /iris_0/stereo_camera/points2                                                           29 msgs    : sensor_msgs/PointCloud2
+             /iris_0/stereo_camera/right/camera_info                                                 30 msgs    : sensor_msgs/CameraInfo
+             /iris_0/stereo_camera/right/image_color                                                 30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/right/image_color/compressed                                      30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/right/image_color/compressed/parameter_descriptions                1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_color/compressed/parameter_updates                     1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_color/compressedDepth/parameter_descriptions           1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_color/compressedDepth/parameter_updates                1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_mono                                                  30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/right/image_mono/compressed                                       30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/right/image_mono/compressed/parameter_descriptions                 1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_mono/compressed/parameter_updates                      1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_mono/compressedDepth/parameter_descriptions            1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_mono/compressedDepth/parameter_updates                 1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_raw                                                   31 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/right/image_raw/compressed                                        31 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/right/image_raw/compressed/parameter_descriptions                  1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_raw/compressed/parameter_updates                       1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_raw/compressedDepth/parameter_descriptions             1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_raw/compressedDepth/parameter_updates                  1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_rect                                                  30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/right/image_rect/compressed                                       30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/right/image_rect/compressed/parameter_descriptions                 1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_rect/compressed/parameter_updates                      1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_rect/compressedDepth/parameter_descriptions            1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_rect/compressedDepth/parameter_updates                 1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_rect_color                                            30 msgs    : sensor_msgs/Image
+             /iris_0/stereo_camera/right/image_rect_color/compressed                                 30 msgs    : sensor_msgs/CompressedImage
+             /iris_0/stereo_camera/right/image_rect_color/compressed/parameter_descriptions           1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_rect_color/compressed/parameter_updates                1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/image_rect_color/compressedDepth/parameter_descriptions      1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/image_rect_color/compressedDepth/parameter_updates           1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/right/parameter_descriptions                                       1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/right/parameter_updates                                            1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc/parameter_descriptions                           1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc/parameter_updates                                1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_debayer_left/parameter_descriptions              1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_debayer_left/parameter_updates                   1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_debayer_right/parameter_descriptions             1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_debayer_right/parameter_updates                  1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_rectify_color_left/parameter_descriptions        1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_rectify_color_left/parameter_updates             1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_rectify_color_right/parameter_descriptions       1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_rectify_color_right/parameter_updates            1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_rectify_mono_left/parameter_descriptions         1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_rectify_mono_left/parameter_updates              1 msg     : dynamic_reconfigure/Config
+             /iris_0/stereo_camera/stereo_image_proc_rectify_mono_right/parameter_descriptions        1 msg     : dynamic_reconfigure/ConfigDescription
+             /iris_0/stereo_camera/stereo_image_proc_rectify_mono_right/parameter_updates             1 msg     : dynamic_reconfigure/Config
+             /rosout                                                                                452 msgs    : rosgraph_msgs/Log                     (8 connections)
+             /rosout_agg                                                                            372 msgs    : rosgraph_msgs/Log
+             /rtabmap/cloud_ground                                                                    1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/cloud_map                                                                       1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/cloud_obstacles                                                                 1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/grid_map                                                                        1 msg     : nav_msgs/OccupancyGrid
+             /rtabmap/grid_prob_map                                                                   1 msg     : nav_msgs/OccupancyGrid
+             /rtabmap/info                                                                            8 msgs    : rtabmap_ros/Info
+             /rtabmap/labels                                                                          8 msgs    : visualization_msgs/MarkerArray
+             /rtabmap/local_grid_obstacle                                                             8 msgs    : sensor_msgs/PointCloud2
+             /rtabmap/mapData                                                                         8 msgs    : rtabmap_ros/MapData
+             /rtabmap/mapGraph                                                                        8 msgs    : rtabmap_ros/MapGraph
+             /rtabmap/mapPath                                                                         8 msgs    : nav_msgs/Path
+             /rtabmap/octomap_binary                                                                  1 msg     : octomap_msgs/Octomap
+             /rtabmap/octomap_empty_space                                                             1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/octomap_full                                                                    1 msg     : octomap_msgs/Octomap
+             /rtabmap/octomap_global_frontier_space                                                   1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/octomap_grid                                                                    1 msg     : nav_msgs/OccupancyGrid
+             /rtabmap/octomap_ground                                                                  1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/octomap_obstacles                                                               1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/octomap_occupied_space                                                          1 msg     : sensor_msgs/PointCloud2
+             /rtabmap/proj_map                                                                        1 msg     : nav_msgs/OccupancyGrid
+             /rtabmap/scan_map                                                                        1 msg     : sensor_msgs/PointCloud2
+             /tf                                                                                    313 msgs    : tf2_msgs/TFMessage                    (3 connections)
+             /tf_static                                                                               1 msg     : tf2_msgs/TFMessage
